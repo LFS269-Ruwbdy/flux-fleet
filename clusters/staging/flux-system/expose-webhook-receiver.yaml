@@ -7,9 +7,9 @@ spec:
   ports:
   - name: http
     port: 80
-  protocol: TCP
-  targetPort: http-webhook
-  nodePort: 31234
-selector:
-  app: notification-controller
-type: NodePort
+    protocol: TCP
+    targetPort: http-webhook
+    nodePort: 31234
+  selector:
+    app: notification-controller
+  type: NodePort
